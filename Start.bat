@@ -23,13 +23,13 @@ echo 3.Edgeモードに変更(動作が止まる現象が発生する可能性あり。)
 echo 4.このバッチを終了します。
 echo.
 
-echo 行いたい動作の1~3入力してEnterを押下してください。
-SET /P ans="動作モードを入力(1~3)>"
+echo 行いたい動作の1~4入力してEnterを押下してください。
+SET /P ans="動作モードを入力(1~4)>"
 
 if /i {%ans%}=={1} (goto :pr1)
 if /i {%ans%}=={2} (goto :pr2)
 if /i {%ans%}=={3} (goto :pr3)
-if /i {%ans%}=={3} (goto :pr4)
+if /i {%ans%}=={4} (goto :pr4)
 
 exit
 
@@ -63,7 +63,7 @@ echo 値を変更します。
 echo 値の変更が完了しました。以下、実行後結果
 %~dp0sqlite3 %sqlite_data_path% "SELECT * FROM Other UseIEWebView;"
 echo.
-echo 末尾が「1」になっていた場合、動作モードの変更が完了しています。
+echo 末尾が「1」になっている場合、動作モードの変更が完了しています。
 echo CLIPSTUDIOアプリの起動をお試しください。
 pause
 %~dp0Start.bat
@@ -83,7 +83,7 @@ echo 値を変更します。
 echo 値の変更が完了しました。以下、実行後結果
 %~dp0sqlite3 %sqlite_data_path% "SELECT * FROM Other UseIEWebView;"
 echo.
-echo 末尾が「0」になっていた場合、動作モードの変更が完了しています。
+echo 末尾が「0」になっている場合、動作モードの変更が完了しています。
 echo CLIPSTUDIOアプリの起動をお試しください。
 pause
 %~dp0Start.bat
