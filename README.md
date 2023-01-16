@@ -7,7 +7,7 @@ CLIPSTUDIOアプリの表示モードがEdgeモードになっており、
 
 # 使用方法
 
-**CLIPSTUDIOアプリが固まっている場合はタスクマネージャーで強制的に終了させてください。**
+**CLIPSTUDIOアプリ(Paintが付いていない方)が固まっている場合はタスクマネージャーで強制的に終了させてください。**
 
 [ここ](https://github.com/kawa-nobu/CS_IE_Edge_Changer/archive/refs/heads/main.zip)から最新のリリースをダウンロード(例: main.zip)より、最新のzipファイルをダウンロード。
 
