@@ -7,7 +7,7 @@ CLIPSTUDIOアプリの表示モードがEdgeモードになっており、
 
 # 使用方法
 
-ここ「 https://github.com/kawa-nobu/CS_IE_Edge_Changer/releases 」から最新のリリースをダウンロード(例: v1.zip)より、最新のzipファイルをダウンロード。
+[ここ](https://github.com/kawa-nobu/CS_IE_Edge_Changer/archive/refs/heads/main.zip)から最新のリリースをダウンロード(例: v1.zip)より、最新のzipファイルをダウンロード。
 
 zipを解凍し、フォルダ内のStart(Start.bat)を実行します。
 
