@@ -33,3 +33,10 @@ zipを解凍し、フォルダ内のStart(Start.bat)を実行します。
 何かわからないことがありましたら、
 
 Twitter:@kw_nobu( https://twitter.com/kw_nobu )へDM下さい。
+
+# 作成者動作環境
+OS:Windows11 Home 22H2 (Build:22621.1105)
+
+ClipStudio Ver:1.13.0 (32Bit)
+
+Clip Studio Paint Ver:1.13.0 (Ex-64Bit)
