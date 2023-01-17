@@ -1,9 +1,6 @@
 cls
 @echo off
-echo.
 set sqlite_data_path=%APPDATA%\CELSYSUserData\CELSYS\CLIPStudioVer1_5_0\Preference\Config.sqlite
-echo 設定データパス(%sqlite_data_path%)
-echo 設定データパスが正常に表示されていれば問題ありません。
 echo ======================================================
 echo CLIPSTUDIO IE/Edge表示設定変更 by kawa-nobu(@kw_nobu)
 echo ======================================================
@@ -17,19 +14,29 @@ echo 最新のバイナリや、バイナリが安全かどうか気になる場合は
 echo https://www.sqlite.org/download.html
 echo より、バイナリをダウンロードして上書きしてください。
 echo.
+echo !=================22-01-17(Update)===================!
+echo 公式より情報が公開されていました。
+echo 参考URL:https://support.clip-studio.com/ja-jp/faq/articles/20230001
+echo 4番の処理は公式が公開した方法を自動化しています。
+echo 作成者は4番選択を推奨します。
+echo 4番の処理はSQLiteバイナリ無しで実行できます。
+echo !====================================================!
+echo.
 echo 1.現在の情報を取得(まず初めに行うことを推奨)
 echo 2.IEモードに変更(動作を改善させるにはこれ!)
 echo 3.Edgeモードに変更(動作が止まる現象が発生する可能性あり。)
-echo 4.このバッチを終了します。
+echo 4.Config削除(公式情報自動化)※公式の情報を自動化させたものです。←(推奨)
+echo 5.このバッチを終了します。
 echo.
 
-echo 行いたい動作の1~4入力してEnterを押下してください。
-SET /P ans="動作モードを入力(1~4)>"
+echo 行いたい動作の1~5入力してEnterを押下してください。
+SET /P ans="動作モードを入力(1~5)>"
 
 if /i {%ans%}=={1} (goto :pr1)
 if /i {%ans%}=={2} (goto :pr2)
 if /i {%ans%}=={3} (goto :pr3)
 if /i {%ans%}=={4} (goto :pr4)
+if /i {%ans%}=={5} (goto :pr5)
 
 exit
 
@@ -89,4 +96,24 @@ pause
 %~dp0Start.bat
 
 :pr4
+cls
+echo Config削除(公式情報自動化)
+echo 公式情報を元に参考にした処理を自動化したものです。
+echo 参考URL
+echo https://support.clip-studio.com/ja-jp/faq/articles/20230001
+echo.
+echo 変更前データをコピーします。
+copy %sqlite_data_path% "%APPDATA%\CELSYSUserData\CELSYS\CLIPStudioVer1_5_0\Preference\Config_BackUp_%date:~0,4%%date:~5,2%%date:~8,2%%time:~0,2%%time:~3,2%%time:~6,2%.sqlite"
+echo 変更前データをコピーしました。以下、ファイルパス
+echo %APPDATA%\CELSYSUserData\CELSYS\CLIPStudioVer1_5_0\Preference\Config_BackUp_%date:~0,4%%date:~5,2%%date:~8,2%%time:~0,2%%time:~3,2%%time:~6,2%.sqlite
+echo.
+echo 現在のConfigデータを削除します。
+del %sqlite_data_path%
+echo 削除が完了しました。
+echo.
+echo CLIPSTUDIOアプリの起動をお試しください。
+pause
+%~dp0Start.bat
+
+:pr5
 exit
