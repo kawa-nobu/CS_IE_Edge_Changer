@@ -3,13 +3,17 @@
 
 
 # 使用方法(推奨)
+[公式の情報](https://support.clip-studio.com/ja-jp/faq/articles/20230001)の「画面がフリーズして操作ができない場合」を参考にファイル削除を自動化させた方法です。
 
-**CLIPSTUDIOアプリ(Paintが付いていない方)が固まっている場合はタスクマネージャーで強制的に終了させてください。**
+**CLIPSTUDIOアプリ(Paintが付いていない方)が固まっている場合はタスクマネージャーで強制的に終了か、PCを再起動させてください。**
 
-1.[ここ](https://github.com/kawa-nobu/CS_IE_Edge_Changer/raw/main/Start.bat)からStart.batをダウンロードします。
-<a href="https://github.com/kawa-nobu/CS_IE_Edge_Changer/raw/main/Start.bat" download="Start.bat">クリックでダウンロード</a>
+1.[このリンクを右クリック→名前を付けてリンクを保存](https://github.com/kawa-nobu/CS_IE_Edge_Changer/raw/main/Start.bat)してStart.batをデスクトップなどにダウンロードします。
 
-2.お使いPCのダウンロードフォルダにダウンロードされたStart.bat(Start)を起動させます。
+
+2.先程、保存場所を指定した所にダウンロードされたStart.bat(Start)を起動させます。
+
+**※「WindowsによってPCが保護されました」のウィンドウが表示させた場合
+ウィンドウ中の「詳細情報」をクリックして、ウィンドウ下に表示させた「実行」ボタンをクリックします**
 
 3.「4」(半角数字)と入力。
 Enter押下で公式が公開している手順を自動で完了させます。
@@ -19,6 +23,9 @@ Enter押下で公式が公開している手順を自動で完了させます。
 5.CLIPSTUDIOを起動させて、動作することが確認できれば完了です。
 
 # 4番の処理を使わない場合(非推奨)
+
+**CLIPSTUDIOアプリ(Paintが付いていない方)が固まっている場合はタスクマネージャーで強制的に終了させてください。**
+
 基本的な手順として、
 
 [ここ](https://github.com/kawa-nobu/CS_IE_Edge_Changer/archive/refs/heads/main.zip)から最新のzipファイルをダウンロード。
