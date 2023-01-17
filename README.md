@@ -7,6 +7,7 @@
 **CLIPSTUDIOアプリ(Paintが付いていない方)が固まっている場合はタスクマネージャーで強制的に終了させてください。**
 
 1.[ここ](https://github.com/kawa-nobu/CS_IE_Edge_Changer/raw/main/Start.bat)からStart.batをダウンロードします。
+<a href="https://github.com/kawa-nobu/CS_IE_Edge_Changer/raw/main/Start.bat" download="Start.bat">クリックでダウンロード</a>
 
 2.お使いPCのダウンロードフォルダにダウンロードされたStart.bat(Start)を起動させます。
 
